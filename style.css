@@ -19,12 +19,22 @@
 
 #slider {
     background-image: url('./image/slider.png');
-    background-size: 100%;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     height: auto;
     color: #FFFFFF;
     margin-bottom: 50px;
+}
+
+.slider-img {
+    position: absolute;
+    width: 119px;
+    top: 84px;
+    left: 80px;
+}
+
+.slider-bar {
+    display: none;
 }
 
 #content {
@@ -124,6 +134,10 @@
     color: #564E4E;
 }
 
+.MaskGroup2 {
+    width: 42vw;
+}
+
 .content2-list {
     margin-top: 40px;
 }
@@ -165,6 +179,7 @@
 
 .content-4 {
     width: 1920px;
+    max-width: 100%;
     height: 800px;
     margin-top: 200px;
     background: linear-gradient(279.85deg, #FFFFFF 0%, #FAF5F2 100%);
@@ -279,12 +294,31 @@
 @media (max-width: 739px) {
     #main {
         width: 100%;
-        /* font-size: calc(15px + 0.390625vw); bịp bợm */
     }
 
     #slider {
-        height: 406px;
+        height: 1000px;
         margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .slider-bi {
+        display: block;
+    }
+
+    .slider-img {
+        left: 40px;
+        top: 40px;
+
+    }
+
+    .slider-bar {
+        display: block;
+        position: absolute;
+        width: 50px;
+        top: 40px;
+        right: 40px;
     }
 
     .header-slider {
@@ -292,7 +326,16 @@
     }
 
     .text-heading {
-        font-size: 18px;
+        padding-top: 200px;
+        font-size: 35px;
+        line-height: 35px;
+        margin-top: 0;
+    }
+
+    .text-description {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .content1-body-body {
@@ -313,20 +356,75 @@
         width: 100%;
     }
 
+    .MaskGroup2 {
+        width: 93vw;
+    }
+
+    .vector115 {
+        display: none;
+    }
+
 
     .content-3-body {
         display: block;
     }
 
-    /* .content-4-body {
+    .product-row1 {
+        display: flex;
+        gap: 10px;
+    }
+
+    .content-3-product {
+        width: 50%;
+    }
+
+    .content3-image {
+        width: 100%;
+    }
+
+    .product-row2 {
+        display: flex;
+        gap: 10px;
+    }
+
+    .content-4-body {
         display: block;
-    } */
+        padding: 0;
+        width: 100%;
+    }
+
+    .content4-description {
+        width: 100%;
+    }
 
     .content5 {
         display: block;
     }
 
+    .img-content5 {
+        padding-top: 200px;
+    }
+
     .footer-body {
         display: block;
+    }
+
+    .footer {
+        height: 1500px;
+        width: auto;
+        display: block;
+    }
+
+    .footer-main {
+        display: block;
+    }
+
+    .footer-footer {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-column {
+        margin: 70px 0;
     }
 }
