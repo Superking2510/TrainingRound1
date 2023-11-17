@@ -880,7 +880,16 @@
     }
 
     .MaskGroup2 {
-        width: 60%;
+        width: 50%;
+        object-fit: contain;
+    }
+
+    .content-2-heading {
+        font-size: 1.875vw;
+    }
+
+    .text-content2 {
+        font-size: 0.9375vw;
     }
 
     .content4-description {
@@ -908,8 +917,17 @@
         gap: calc(100% * 80 /1760)
     }
 
+    .content5-text-text {
+        font-size: 0.9375vw;
+    }
+
+    .content5-text-heading {
+        font-size: 1.875vw;
+    }
+
     .img-content5 {
-        width: 60%;
+        width: 50%;
+        object-fit: contain;
     }
 
     .footer {
